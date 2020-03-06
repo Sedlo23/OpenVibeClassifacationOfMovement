@@ -5,11 +5,11 @@ Analýza dat EEG
 ## TÝM SG-1
 
 ### Vedoucí
-Jan Rubáš</br>
+Jan Rubáš - rubajs</br>
 [janrubas@gapps.zcu.cz]
 
 ### Správce repozitáře
-Jan František Sedláček</br>
+Jan František Sedláček - sedlo23</br>
 [jfsedla@gapps.zcu.cz]
 
 ### Programátor
