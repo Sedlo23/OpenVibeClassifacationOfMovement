@@ -13,7 +13,7 @@ Jan František Sedláček - sedlo23</br>
 [jfsedla@gapps.zcu.cz]
 
 ### Programátor
-Tomáš Vaněček</br>	
+Tomáš Vaněček - galedex</br>	
 [vanecekt@gapps.zcu.cz]
 
 ## O PROJETKU
