@@ -2,3 +2,6 @@ Tento soubor obsahuje některá data poskytnutá od zadavatele.
 
 lhoe - left hand open eyes
 rhoe - right hand open eyes
+
+lhoemi - Movement imagery with left hand with open eyes.
+rhoemi - Movement imagery with right hand with open eyes.
