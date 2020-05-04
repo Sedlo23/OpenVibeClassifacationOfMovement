@@ -1,0 +1,4 @@
+Tento soubor obsahuje některá data poskytnutá od zadavatele.
+
+lhoe - left hand open eyes
+rhoe - right hand open eyes
