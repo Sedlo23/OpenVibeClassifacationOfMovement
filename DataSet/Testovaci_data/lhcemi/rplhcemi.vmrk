@@ -1,0 +1,34 @@
+Brain Vision Data Exchange Marker File, Version 1.0
+
+[Common Infos]
+Codepage=UTF-8
+DataFile=rplhcemi.eeg
+
+[Marker Infos]
+; Each entry: Mk<Marker number>=<Type>,<Description>,<Position in data points>,
+; <Size in data points>, <Channel number (0 = marker is related to all channels)>
+; Fields are delimited by commas, some fields might be omitted (empty).
+; Commas in type or description text are coded as "\1".
+Mk1=New Segment,,1,1,0,20190404092953418142
+Mk2=Stimulus,S  1,17922,1,0
+Mk3=Stimulus,S  1,27921,1,0
+Mk4=Stimulus,S  1,37921,1,0
+Mk5=Stimulus,S  1,47920,1,0
+Mk6=Stimulus,S  1,57919,1,0
+Mk7=Stimulus,S  8,67918,1,0
+Mk8=Stimulus,S  4,187911,1,0
+Mk9=Stimulus,S  1,197910,1,0
+Mk10=Stimulus,S  1,207909,1,0
+Mk11=Stimulus,S  1,217908,1,0
+Mk12=Stimulus,S  1,227907,1,0
+Mk13=Stimulus,S  1,237907,1,0
+Mk14=Stimulus,S  8,247904,1,0
+Mk15=Stimulus,S  2,264995,1,0
+Mk16=Stimulus,S  4,367896,1,0
+Mk17=Stimulus,S  1,377895,1,0
+Mk18=Stimulus,S  1,387895,1,0
+Mk19=Stimulus,S  1,397894,1,0
+Mk20=Stimulus,S  1,407893,1,0
+Mk21=Stimulus,S  1,417892,1,0
+Mk22=Stimulus,S  8,427891,1,0
+Mk23=Stimulus,S  4,547882,1,0

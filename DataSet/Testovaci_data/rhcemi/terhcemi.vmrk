@@ -1,0 +1,33 @@
+Brain Vision Data Exchange Marker File, Version 1.0
+
+[Common Infos]
+Codepage=UTF-8
+DataFile=tetothcemi.eeg
+
+[Marker Infos]
+; Each entry: Mk<Marker number>=<Type>,<Description>,<Position in data points>,
+; <Size in data points>, <Channel number (0 = marker is related to all channels)>
+; Fields are delimited by commas, some fields might be omitted (empty).
+; Commas in type or description text are coded as "\1".
+Mk1=New Segment,,1,1,0,20181025110718852465
+Mk2=Stimulus,S  1,19368,1,0
+Mk3=Stimulus,S  1,29367,1,0
+Mk4=Stimulus,S  1,39366,1,0
+Mk5=Stimulus,S  1,49365,1,0
+Mk6=Stimulus,S  1,59364,1,0
+Mk7=Stimulus,S  8,69363,1,0
+Mk8=Stimulus,S  4,189355,1,0
+Mk9=Stimulus,S  1,199354,1,0
+Mk10=Stimulus,S  1,209354,1,0
+Mk11=Stimulus,S  1,219352,1,0
+Mk12=Stimulus,S  1,229352,1,0
+Mk13=Stimulus,S  1,239351,1,0
+Mk14=Stimulus,S  8,249349,1,0
+Mk15=Stimulus,S  4,369341,1,0
+Mk16=Stimulus,S  1,379340,1,0
+Mk17=Stimulus,S  1,389339,1,0
+Mk18=Stimulus,S  1,399339,1,0
+Mk19=Stimulus,S  1,409338,1,0
+Mk20=Stimulus,S  1,419337,1,0
+Mk21=Stimulus,S  8,429335,1,0
+Mk22=Stimulus,S  4,549327,1,0
