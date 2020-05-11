@@ -712,7 +712,7 @@
 					<TypeIdentifier>(0x330306dd, 0x74a95f98)</TypeIdentifier>
 					<Name>Filename to load configuration from</Name>
 					<DefaultValue></DefaultValue>
-					<Value>C:/Users/jfs/Desktop/train.cfg</Value>
+					<Value>C:/Users/janru/OneDrive/Dokumenty/GitHub/ZSWI_EEG/TrenovanaData/lhoe/lhoeTrainer.cfg</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 			</Settings>
@@ -834,7 +834,7 @@
 					<TypeIdentifier>(0x330306dd, 0x74a95f98)</TypeIdentifier>
 					<Name>Filename</Name>
 					<DefaultValue></DefaultValue>
-					<Value>C:/Users/jfs/Desktop/temp/import.ov</Value>
+					<Value>C:/Users/janru/OneDrive/Dokumenty/GitHub/ZSWI_EEG/TrenovanaData/lhoe/lhoeConvert.ov</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 			</Settings>
