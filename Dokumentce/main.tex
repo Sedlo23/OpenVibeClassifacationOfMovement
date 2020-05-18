@@ -1,0 +1,130 @@
+\documentclass{report}
+% Balíky
+\usepackage[czech]{babel}
+\usepackage[IL2]{fontenc}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=blue,
+    pdftitle={Sharelatex Example},
+    bookmarks=true,
+    }  
+    
+\title{Detekce evokovaných potenciálů horních končetin}
+\author{Jan Rubáš, Jan František Sedláček, Tomáš Vaněček}
+\date{KIV/ZSWI LS 2019/20}
+%
+\begin{document}
+
+\maketitle
+\tableofcontents
+%
+\chapter{Specifikace požadavků}
+Přizpůsobení jednoho (blíže nespecifikovaného) scénáře z OpenVibe již existujícím naměřeným datům tak, aby byl schopen na základě těchto dat klasifikovat pohyby horních končetin (levou a pravou rukou).
+Obecný postup pro testování scénáře.
+Nalezení základních požadavků na funkční scénář.
+
+\section{Popis a priorita}
+Úprava scénáře z prostředí OpenVibe tak, aby byl schopen pracovat s naměřenými daty, klasifikovat druh pohybu horních končetin a zjistit do jaké míry je schopen tento pohyb klasifikovat.
+
+\subsection{Události a odpovědi}
+Klasifikátor bude schopen z naměřených dat identifikovat pohyb jedné z horních končetin.
+
+V případě, že nebude umožněn přístup do laboratoře UN323 po 13.4.2020, tak se použijí již naměřená data, podle kterých se jeden z již existujících scénářů přizpůsobí.
+
+\subsection{Funkční požadavky}
+Kvalitní vstupní offline data:
+Spolupracující a čilý subjekt.
+Správně připravené nástroje (ECI čepice, BrainApm DC, pracovní stanice... )
+Správně připravené prostředí pro testování.
+\\
+\\
+\\
+\\
+\\
+\\
+Podrobnější specifikace celého projektu je popsaná v dokumentu
+\href{https://docs.google.com/document/d/1LbMN5tFxxpSZ1Gf7irw77nM88PaOCfTKEih6rNO8mn0/edit?usp=sharing}{Specifikace projektu}.
+
+
+\chapter{Analýza problému a návrh programu}
+%
+\section{Konvertování}
+%
+Scénář bude pomcí modulu \textit{BrainVision Format file reader} načítat původní \textit{.vhdr} offline soubory a bude je konvenrtovat na podporující formát \textit{.ov}, který podporuje rozhraní OpenVibe.
+%
+\section{Trénování}
+Scénář bude určený pro generování trénovací množiny dat.
+
+Bude filtrovat vstupní kanály a zuží je pouze na čtyři - \textbf{C3, C4, P3, P4}. Tyto kanály obsahují veškeré informace o pohybu horních končetin.
+
+Vstup pro tento scénář budou \textit{.ov} soubory a výstupem bude jeden prvek trénovací množiny \textit{.cfg}.
+%
+\section{Testování klasifikace}
+Scénář bude určený pro klasifikaci scénáře na základě trénovací množiny.
+
+Jeho vstupem bude \textit{.ov} soubor, který se bude klasifikovat a trénovaná množina souborů \textit{.ov} na jejíž základě se bude vyhodnocovat, jak moc je tento klasifikátor úspěšný.
+\\
+\\
+\\
+\\
+\\
+\\
+Podrobná analýza našeho projektu a jeho následná implementace je popsána v dokumentu
+\href{https://docs.google.com/document/d/1DZhPO0-b6VwDLwlwbTCjLrkphk3x23aponyvLbC3uOU/edit?usp=sharing}{Strukturovaná analýza projektu}.
+
+
+\chapter{Uživatelská dokumentace}
+\section{Spuštění}
+Před spuštění projektu je potřeba otevřít zdrojové kódy scénářů pro convertování, trénování a testování dat v rozhraní OpenVibe pomocí \textbf{File - Open - "vybraný soubor"}.
+
+ 
+\section{Nahrání dat do scénářů}
+Po otevření scénářů je potřeba nahrát data, se kterými budeme pracovat.
+\subsection{convert.xml}
+ Používáte-li data s příponou \textit{.vhdr}, je třeba tato data konvertovat do openvibe formátu \textit{.ov}. Cestu k \textit{.vhdr} souboru načtete po kliknutí na modul \textit{Brainamp file reader} a cestu nastavíte okénku \textit{File name} a stisknete tlačítko \textit{Apply} (viz obrázky: \ref{fig:converter} a \ref{fig:filereader})
+ 
+ Je důležité zvolit cestu, kam chceme výsledný soubor v \textit{.ov} formátu uložit a jak jej pojmenovat.
+ 
+ Kliknutím na na modul \textit{Generic stream writer} se zobrazí dialogové okno s nastavením cesty a názvu nově vzniklého souboru (viz \ref{fig:filewriter}.
+ %
+\begin{figure}[!h]
+\centering
+  \includegraphics[width=0.3\textwidth]{pictures/coverter.png}
+  \caption{Scénář converter}
+  \label{fig:converter}
+ \end{figure}
+ %
+\begin{figure}[!h]
+\centering
+  \includegraphics[width=0.5\textwidth]{pictures/setFileReader.png}
+  \caption{Nastavení Brainamp file reader}
+  \label{fig:filereader}
+ \end{figure}
+ %
+ \begin{figure}[!h]
+\centering
+  \includegraphics[width=0.5\textwidth]{pictures/configurewriter.png}
+  \caption{Nastavení Generic stream writer}
+  \label{fig:filewriter}
+ \end{figure}
+ %
+ Nyní po kliknutí na modul \textit{Generic stream writer}.
+
+ 
+ 
+ 
+\subsection{trainer.xml}
+Tento modul pomocí 
+\subsection{testing.xml}
+\chapter{Závěr}
+
+
+\end{document}
+
