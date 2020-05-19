@@ -16,7 +16,7 @@
     bookmarks=true,
     }  
     
-\title{Detekce evokovaných potenciálů horních končetin}
+\title{Detekce potenciálů horních končetin v EEG záznamu}
 \author{Jan Rubáš, Jan František Sedláček, Tomáš Vaněček}
 \date{KIV/ZSWI LS 2019/20}
 %
@@ -57,7 +57,7 @@ Podrobnější specifikace celého projektu je popsaná v dokumentu
 %
 \section{Konvertování}
 %
-Scénář bude pomcí modulu \textit{BrainVision Format file reader} načítat původní \textit{.vhdr} offline soubory a bude je konvenrtovat na podporující formát \textit{.ov}, který podporuje rozhraní OpenVibe.
+Scénář bude pomcí pluginu \textit{BrainVision Format file reader} načítat původní  \textit{.vhdr, .eeg, .vmrk} offline soubory a bude je konvenrtovat na formát \textit{.ov}, který podporuje rozhraní OpenVibe.
 %
 \section{Trénování}
 Scénář bude určený pro generování trénovací množiny dat.
@@ -88,43 +88,80 @@ Před spuštění projektu je potřeba otevřít zdrojové kódy scénářů pro
 \section{Nahrání dat do scénářů}
 Po otevření scénářů je potřeba nahrát data, se kterými budeme pracovat.
 \subsection{convert.xml}
- Používáte-li data s příponou \textit{.vhdr}, je třeba tato data konvertovat do openvibe formátu \textit{.ov}. Cestu k \textit{.vhdr} souboru načtete po kliknutí na modul \textit{Brainamp file reader} a cestu nastavíte okénku \textit{File name} a stisknete tlačítko \textit{Apply} (viz obrázky: \ref{fig:converter} a \ref{fig:filereader})
+ Používáte-li data s příponou \textit{.vhdr, .eeg, .vmrk} (tyto soubory jsou vzájemně propojeny, proto je potřeba mít v jedné složce všechny tyto soubory), je třeba tato data konvertovat do openvibe formátu \textit{.ov}. Cestu k \textit{.vhdr} souboru načtete po kliknutí na plugin \textit{Brainamp file reader} a cestu nastavíte okénku \textit{Filename} a stisknete tlačítko \textit{Apply} (viz obrázky: \ref{fig:converter} a \ref{fig:filereader})
  
- Je důležité zvolit cestu, kam chceme výsledný soubor v \textit{.ov} formátu uložit a jak jej pojmenovat.
+ Cestu, kam chceme uložit výsledný soubor v \textit{.ov} formátu nastavíme po kliknutí na plugin \textit{Generic stream writer}. Zobrazí se dialogové okno s nastavením cesty a názvu souboru, kam jej chceme uložit v poli \textit{Filename} (viz obrázek \ref{fig:filewriter}). 
+
+ Dále nastavíme manuálně pomocí pluginu časovače \textit{Timeout} časový úsek od počátku záznamu původního \textit{.vhdr} souboru, který chceme konvertovat (musíme si také uvědomit časovou náročnost měření, která je zaznamenána v souboru \textit{.vhdr} a podle toho nastavit příslušný čas, viz obrázek \ref{fig:timeout}).
  
- Kliknutím na na modul \textit{Generic stream writer} se zobrazí dialogové okno s nastavením cesty a názvu nově vzniklého souboru (viz \ref{fig:filewriter}.
+ Celý tento scénář pustíme pomocí tlačítka symbolizující \textbf{start/play šipku} na obrázku a rychlost přehrávání, případné zastavení ovládáme pomocí vedlejších tlačítek \ref{fig:btns}. Zobrazí se nám naměřený EEg signál, který je uložený v \textit{.vhdr} souboru.
  %
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \centering
   \includegraphics[width=0.3\textwidth]{pictures/coverter.png}
   \caption{Scénář converter}
   \label{fig:converter}
  \end{figure}
  %
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \centering
   \includegraphics[width=0.5\textwidth]{pictures/setFileReader.png}
   \caption{Nastavení Brainamp file reader}
   \label{fig:filereader}
  \end{figure}
  %
- \begin{figure}[!h]
+ \begin{figure}[!ht]
 \centering
   \includegraphics[width=0.5\textwidth]{pictures/configurewriter.png}
   \caption{Nastavení Generic stream writer}
   \label{fig:filewriter}
  \end{figure}
  %
- Nyní po kliknutí na modul \textit{Generic stream writer}.
+ \begin{figure}[!ht]
+\centering
+  \includegraphics[width=0.5\textwidth]{pictures/timeout.png}
+  \caption{Nastavení zpoždění}
+  \label{fig:timeout}
+ \end{figure}
+ %
+  \begin{figure}[!ht]
+\centering
+  \includegraphics[width=0.3\textwidth]{pictures/playstart.png}
+  \caption{Ovladač přehrávání a konvertování}
+  \label{fig:btns}
+ \end{figure}
 
- 
- 
- 
 \subsection{trainer.xml}
-Tento modul pomocí 
-\subsection{testing.xml}
-\chapter{Závěr}
+Scénář určený pro trénování. V pluginu \textit{Generic stream reader} nastavíme vstupní soubor \textit{.ov} formátu obdobně jako jsme nastavovali vstupní soubor v \textbf{convert.xml}, který chceme natrénovat.
 
+V pluginu \textit{Classifier trainer} a jeho textovém poli \textit{Filename to save configuration to} nastavíme příslušný soubor a cestu, kam trénovací soubor uložit v \textit{.cfg} formátu (obrázek \ref{fig:trainer}).
+
+  \begin{figure}[!ht]
+\centering
+  \includegraphics[width=0.5\textwidth]{pictures/trainer.png}
+  \caption{Classifier trainer}
+  \label{fig:trainer}
+ \end{figure}
+
+Nakonec spustíme scénář stejným způsobem jako při konverzi dat.
+\subsection{testing.xml}
+Scénář sloužící ke klasifikaci dat.
+
+Nejdříve musíme nastavit cestu ke klasifikovanému souboru. Stejně jako u \textbf{trainer.xml} nastavíme \textit{Generic stream reader}.
+V pluginu \textit{Classifier processor} nastavíme v poli \textit{Filename to load coniguration from} cestu, kde se nachází trénovací soubor v \textit{.cfg} formátu (obrázek \ref{proc}.
+
+Nyní můžeme tento scénář spustit a zobrazí se nám výsledky klasifikace a zkoumaný signál.
+
+ %
+  \begin{figure}[!ht]
+\centering
+  \includegraphics[width=0.5\textwidth]{pictures/processorclass.png}
+  \caption{Classifier processor}
+  \label{fig:btns}
+ \end{figure}
+
+
+\chapter{Závěr}
 
 \end{document}
 
