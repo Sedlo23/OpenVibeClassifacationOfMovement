@@ -29,7 +29,7 @@
 					<TypeIdentifier>(0x330306dd, 0x74a95f98)</TypeIdentifier>
 					<Name>Filename (header)</Name>
 					<DefaultValue></DefaultValue>
-					<Value>C:/Users/jfs/Downloads/ZSWI_EEG-master/ZSWI_EEG-master/DataSet/lhoe/jllhoe.vhdr</Value>
+					<Value>C:/Users/jfs/Downloads/ZSWI_EEG-master/ZSWI_EEG-master/DataSet/lhoemi/fblhoemi.vhdr</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
@@ -101,7 +101,7 @@
 					<TypeIdentifier>(0x330306dd, 0x74a95f98)</TypeIdentifier>
 					<Name>Filename</Name>
 					<DefaultValue>record-[$core{date}-$core{time}].ov</DefaultValue>
-					<Value>C:/Users/jfs/Desktop/temp/import.ov</Value>
+					<Value>C:/Users/jfs/Desktop/temp/import2.ov</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
