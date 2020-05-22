@@ -7,6 +7,193 @@
 	<Outputs></Outputs>
 	<Boxes>
 		<Box>
+			<Identifier>(0x00000127, 0x0000758f)</Identifier>
+			<Name>Timeout</Name>
+			<AlgorithmClassIdentifier>(0x24fcd292, 0x5c8f6aa8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x544a003e, 0x6dcba5f6)</TypeIdentifier>
+					<Name>Input Stream</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x6f752dd0, 0x082a321e)</TypeIdentifier>
+					<Name>Output Stimulations</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>Timeout delay</Name>
+					<DefaultValue>5</DefaultValue>
+					<Value>500</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x2c132d6e, 0x44ab0d97)</TypeIdentifier>
+					<Name>Output Stimulation</Name>
+					<DefaultValue>OVTK_StimulationId_Label_00</DefaultValue>
+					<Value>OVTK_StimulationId_Label_08</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>704</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>112</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x1eaee00e, 0xdb05d34e)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>2</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x000009ec, 0x00005363)</Identifier>
+			<Name>Simple DSP</Name>
+			<AlgorithmClassIdentifier>(0x00e26fa1, 0x1dbab1b2)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input - A</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Equation</Name>
+					<DefaultValue>x</DefaultValue>
+					<Value>x/2</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>512</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>112</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x21889dc4, 0x1126497e)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xfba64161, 0x65304e21)</Identifier>
+					<Value></Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x00006a06, 0x00003c07)</Identifier>
+			<Name>Simple DSP</Name>
+			<AlgorithmClassIdentifier>(0x00e26fa1, 0x1dbab1b2)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input - A</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Equation</Name>
+					<DefaultValue>x</DefaultValue>
+					<Value>x/2</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>528</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>400</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x21889dc4, 0x1126497e)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xfba64161, 0x65304e21)</Identifier>
+					<Value></Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
 			<Identifier>(0x02e67945, 0x5ea8d309)</Identifier>
 			<Name>Classifier trainer</Name>
 			<AlgorithmClassIdentifier>(0xf3dae8a8, 0x3b444154)</AlgorithmClassIdentifier>
@@ -56,14 +243,14 @@
 					<TypeIdentifier>(0x2c132d6e, 0x44ab0d97)</TypeIdentifier>
 					<Name>Class 1 label</Name>
 					<DefaultValue>OVTK_StimulationId_Label_01</DefaultValue>
-					<Value>OVTK_StimulationId_Label_01</Value>
+					<Value>OVTK_GDF_Arm_Movement</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
 					<TypeIdentifier>(0x2c132d6e, 0x44ab0d97)</TypeIdentifier>
 					<Name>Class 2 label</Name>
 					<DefaultValue>OVTK_StimulationId_Label_02</DefaultValue>
-					<Value>OVTK_StimulationId_Label_01</Value>
+					<Value>OVTK_GDF_Feedback_Continuous</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
@@ -98,7 +285,7 @@
 					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
 					<Name>Number of partitions for k-fold cross-validation test</Name>
 					<DefaultValue>10</DefaultValue>
-					<Value>20</Value>
+					<Value>10</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
@@ -169,14 +356,14 @@
 					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
 					<Name>Epoch duration (in sec)</Name>
 					<DefaultValue>1</DefaultValue>
-					<Value>4.000000</Value>
+					<Value>2</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
 					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
 					<Name>Epoch offset (in sec)</Name>
 					<DefaultValue>0.5</DefaultValue>
-					<Value>0.500000</Value>
+					<Value>5</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
@@ -199,134 +386,6 @@
 				<Attribute>
 					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
 					<Value>(0xa79941ae, 0x80708445)</Value>
-				</Attribute>
-			</Attributes>
-		</Box>
-		<Box>
-			<Identifier>(0x09529b60, 0x70991eff)</Identifier>
-			<Name>Simple DSP</Name>
-			<AlgorithmClassIdentifier>(0x00e26fa1, 0x1dbab1b2)</AlgorithmClassIdentifier>
-			<Inputs>
-				<Input>
-					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
-					<Name>Input - A</Name>
-				</Input>
-			</Inputs>
-			<Outputs>
-				<Output>
-					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
-					<Name>Output</Name>
-				</Output>
-			</Outputs>
-			<Settings>
-				<Setting>
-					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
-					<Name>Equation</Name>
-					<DefaultValue>x</DefaultValue>
-					<Value>x*x</Value>
-					<Modifiability>false</Modifiability>
-				</Setting>
-			</Settings>
-			<Attributes>
-				<Attribute>
-					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>480</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
-					<Value>128</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
-					<Value></Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
-					<Value>(0x21889dc4, 0x1126497e)</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
-					<Value></Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
-					<Value>1</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
-					<Value>1</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
-					<Value>1</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xfba64161, 0x65304e21)</Identifier>
-					<Value></Value>
-				</Attribute>
-			</Attributes>
-		</Box>
-		<Box>
-			<Identifier>(0x1074abc4, 0x70c7daba)</Identifier>
-			<Name>Simple DSP</Name>
-			<AlgorithmClassIdentifier>(0x00e26fa1, 0x1dbab1b2)</AlgorithmClassIdentifier>
-			<Inputs>
-				<Input>
-					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
-					<Name>Input - A</Name>
-				</Input>
-			</Inputs>
-			<Outputs>
-				<Output>
-					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
-					<Name>Output</Name>
-				</Output>
-			</Outputs>
-			<Settings>
-				<Setting>
-					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
-					<Name>Equation</Name>
-					<DefaultValue>x</DefaultValue>
-					<Value>-log(1+x)</Value>
-					<Modifiability>false</Modifiability>
-				</Setting>
-			</Settings>
-			<Attributes>
-				<Attribute>
-					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>576</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
-					<Value>384</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
-					<Value></Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
-					<Value>(0x21889dc4, 0x1126497e)</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
-					<Value></Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
-					<Value>1</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
-					<Value>1</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
-					<Value>1</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xfba64161, 0x65304e21)</Identifier>
-					<Value></Value>
 				</Attribute>
 			</Attributes>
 		</Box>
@@ -364,11 +423,11 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>-144</Value>
+					<Value>-160</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
-					<Value>512</Value>
+					<Value>496</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
@@ -436,105 +495,6 @@
 				<Attribute>
 					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
 					<Value>(0x00000000, 0x0017fc7a)</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xfba64161, 0x65304e21)</Identifier>
-					<Value></Value>
-				</Attribute>
-			</Attributes>
-		</Box>
-		<Box>
-			<Identifier>(0x1807c3c8, 0x2e5c15b2)</Identifier>
-			<Name>Signal average</Name>
-			<AlgorithmClassIdentifier>(0x00642c4d, 0x5df7e50a)</AlgorithmClassIdentifier>
-			<Inputs>
-				<Input>
-					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
-					<Name>Input signal</Name>
-				</Input>
-			</Inputs>
-			<Outputs>
-				<Output>
-					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
-					<Name>Filtered signal</Name>
-				</Output>
-			</Outputs>
-			<Attributes>
-				<Attribute>
-					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>528</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
-					<Value>384</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
-					<Value>(0xc5ff4187, 0xffc5f432)</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
-					<Value>(0x00000000, 0x001919ab)</Value>
-				</Attribute>
-			</Attributes>
-		</Box>
-		<Box>
-			<Identifier>(0x1a88b934, 0x580bfc30)</Identifier>
-			<Name>Simple DSP</Name>
-			<AlgorithmClassIdentifier>(0x00e26fa1, 0x1dbab1b2)</AlgorithmClassIdentifier>
-			<Inputs>
-				<Input>
-					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
-					<Name>Input - A</Name>
-				</Input>
-			</Inputs>
-			<Outputs>
-				<Output>
-					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
-					<Name>Output</Name>
-				</Output>
-			</Outputs>
-			<Settings>
-				<Setting>
-					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
-					<Name>Equation</Name>
-					<DefaultValue>x</DefaultValue>
-					<Value>log(1+x)</Value>
-					<Modifiability>false</Modifiability>
-				</Setting>
-			</Settings>
-			<Attributes>
-				<Attribute>
-					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>576</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
-					<Value>128</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
-					<Value></Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
-					<Value>(0x21889dc4, 0x1126497e)</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
-					<Value></Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
-					<Value>1</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
-					<Value>1</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
-					<Value>1</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xfba64161, 0x65304e21)</Identifier>
@@ -685,14 +645,14 @@
 					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
 					<Name>Epoch duration (in sec)</Name>
 					<DefaultValue>1</DefaultValue>
-					<Value>4.000000</Value>
+					<Value>1</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
 					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
 					<Name>Epoch offset (in sec)</Name>
 					<DefaultValue>0.5</DefaultValue>
-					<Value>0.500000</Value>
+					<Value>0.5</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
@@ -812,7 +772,7 @@
 		</Box>
 		<Box>
 			<Identifier>(0x5194b6cb, 0x7e001785)</Identifier>
-			<Name>C3;C4;P3;P4;Cz</Name>
+			<Name>C3;P3;F3;C4;P4;F4;Pz;Fz;Cz</Name>
 			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
 			<Inputs>
 				<Input>
@@ -831,7 +791,7 @@
 					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
 					<Name>Channel List</Name>
 					<DefaultValue>-</DefaultValue>
-					<Value>C3;C4;P3;P4;Cz</Value>
+					<Value>C3;P3;F3;C4;P4;F4;Pz;Fz;Cz</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
@@ -936,41 +896,6 @@
 				<Attribute>
 					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
 					<Value>(0x00000000, 0x0017fc72)</Value>
-				</Attribute>
-			</Attributes>
-		</Box>
-		<Box>
-			<Identifier>(0x52e2d2a3, 0x4d9f5ea9)</Identifier>
-			<Name>Signal average</Name>
-			<AlgorithmClassIdentifier>(0x00642c4d, 0x5df7e50a)</AlgorithmClassIdentifier>
-			<Inputs>
-				<Input>
-					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
-					<Name>Input signal</Name>
-				</Input>
-			</Inputs>
-			<Outputs>
-				<Output>
-					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
-					<Name>Filtered signal</Name>
-				</Output>
-			</Outputs>
-			<Attributes>
-				<Attribute>
-					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>528</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
-					<Value>128</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
-					<Value>(0xc5ff4187, 0xffc5f432)</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
-					<Value>(0x00000000, 0x001882b5)</Value>
 				</Attribute>
 			</Attributes>
 		</Box>
@@ -1109,70 +1034,6 @@
 			</Attributes>
 		</Box>
 		<Box>
-			<Identifier>(0x75beae35, 0x606e8c20)</Identifier>
-			<Name>Simple DSP</Name>
-			<AlgorithmClassIdentifier>(0x00e26fa1, 0x1dbab1b2)</AlgorithmClassIdentifier>
-			<Inputs>
-				<Input>
-					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
-					<Name>Input - A</Name>
-				</Input>
-			</Inputs>
-			<Outputs>
-				<Output>
-					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
-					<Name>Output</Name>
-				</Output>
-			</Outputs>
-			<Settings>
-				<Setting>
-					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
-					<Name>Equation</Name>
-					<DefaultValue>x</DefaultValue>
-					<Value>x*x</Value>
-					<Modifiability>false</Modifiability>
-				</Setting>
-			</Settings>
-			<Attributes>
-				<Attribute>
-					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>480</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
-					<Value>384</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
-					<Value></Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
-					<Value>(0x21889dc4, 0x1126497e)</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
-					<Value></Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
-					<Value>1</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
-					<Value>1</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
-					<Value>1</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xfba64161, 0x65304e21)</Identifier>
-					<Value></Value>
-				</Attribute>
-			</Attributes>
-		</Box>
-		<Box>
 			<Identifier>(0x75e5990a, 0x59c95a67)</Identifier>
 			<Name>Feature aggregator</Name>
 			<AlgorithmClassIdentifier>(0x00682417, 0x453635f9)</AlgorithmClassIdentifier>
@@ -1236,21 +1097,21 @@
 					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
 					<Name>Spatial Filter Coefficients</Name>
 					<DefaultValue>1;0;0;0;0;1;0;0;0;0;1;0;0;0;0;1</DefaultValue>
-					<Value>1;1;1;1;1;1;1;1;1;1</Value>
+					<Value>4;-1;-1;4;-1;-1;-2;-2;0</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
 					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
 					<Name>Number of Output Channels</Name>
 					<DefaultValue>4</DefaultValue>
-					<Value>2</Value>
+					<Value>1</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
 					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
 					<Name>Number of Input Channels</Name>
 					<DefaultValue>4</DefaultValue>
-					<Value>5</Value>
+					<Value>9</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
@@ -1299,14 +1160,91 @@
 	</Boxes>
 	<Links>
 		<Link>
-			<Identifier>(0x000045ca, 0x00002f8b)</Identifier>
+			<Identifier>(0x00000509, 0x000001c6)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x52a5790c, 0x13d24266)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x00006a06, 0x00003c07)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x00001134, 0x00005833)</Identifier>
 			<Source>
 				<BoxIdentifier>(0x1f046833, 0x21a8a876)</BoxIdentifier>
 				<BoxOutputIndex>1</BoxOutputIndex>
 			</Source>
 			<Target>
+				<BoxIdentifier>(0x0841694e, 0x28e40f42)</BoxIdentifier>
+				<BoxInputIndex>1</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x0000242b, 0x00007a99)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x00006a06, 0x00003c07)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x4cd78e38, 0x35301f84)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x00005f38, 0x00004caa)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x000009ec, 0x00005363)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x75e5990a, 0x59c95a67)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x000063d3, 0x00006d51)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x1f046833, 0x21a8a876)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x0841694e, 0x28e40f42)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x00006532, 0x000055f6)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x00000127, 0x0000758f)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
 				<BoxIdentifier>(0x02e67945, 0x5ea8d309)</BoxIdentifier>
 				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x000071ef, 0x0000483c)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x71322e63, 0x41ba161a)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x000009ec, 0x00005363)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x00007fc6, 0x00006b24)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x1f046833, 0x21a8a876)</BoxIdentifier>
+				<BoxOutputIndex>1</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x4c1eab6f, 0x0e8c522c)</BoxIdentifier>
+				<BoxInputIndex>1</BoxInputIndex>
 			</Target>
 		</Link>
 		<Link>
@@ -1317,39 +1255,6 @@
 			</Source>
 			<Target>
 				<BoxIdentifier>(0x1396fde6, 0x1c649749)</BoxIdentifier>
-				<BoxInputIndex>0</BoxInputIndex>
-			</Target>
-		</Link>
-		<Link>
-			<Identifier>(0x06e5f642, 0x7af6948a)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x75beae35, 0x606e8c20)</BoxIdentifier>
-				<BoxOutputIndex>0</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x1807c3c8, 0x2e5c15b2)</BoxIdentifier>
-				<BoxInputIndex>0</BoxInputIndex>
-			</Target>
-		</Link>
-		<Link>
-			<Identifier>(0x076b541e, 0x4295b37a)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x1807c3c8, 0x2e5c15b2)</BoxIdentifier>
-				<BoxOutputIndex>0</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x1074abc4, 0x70c7daba)</BoxIdentifier>
-				<BoxInputIndex>0</BoxInputIndex>
-			</Target>
-		</Link>
-		<Link>
-			<Identifier>(0x0fb9552e, 0x72e04408)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x1f046833, 0x21a8a876)</BoxIdentifier>
-				<BoxOutputIndex>0</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x0841694e, 0x28e40f42)</BoxIdentifier>
 				<BoxInputIndex>0</BoxInputIndex>
 			</Target>
 		</Link>
@@ -1373,17 +1278,6 @@
 			<Target>
 				<BoxIdentifier>(0x02e67945, 0x5ea8d309)</BoxIdentifier>
 				<BoxInputIndex>1</BoxInputIndex>
-			</Target>
-		</Link>
-		<Link>
-			<Identifier>(0x1bb3cb29, 0x04e6f5f4)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x1a88b934, 0x580bfc30)</BoxIdentifier>
-				<BoxOutputIndex>0</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x75e5990a, 0x59c95a67)</BoxIdentifier>
-				<BoxInputIndex>0</BoxInputIndex>
 			</Target>
 		</Link>
 		<Link>
@@ -1420,17 +1314,6 @@
 			</Target>
 		</Link>
 		<Link>
-			<Identifier>(0x32d337b3, 0x44da5cbe)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x1f046833, 0x21a8a876)</BoxIdentifier>
-				<BoxOutputIndex>1</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x0841694e, 0x28e40f42)</BoxIdentifier>
-				<BoxInputIndex>1</BoxInputIndex>
-			</Target>
-		</Link>
-		<Link>
 			<Identifier>(0x34a10a1a, 0x549b90c5)</Identifier>
 			<Source>
 				<BoxIdentifier>(0x1396fde6, 0x1c649749)</BoxIdentifier>
@@ -1442,17 +1325,6 @@
 			</Target>
 		</Link>
 		<Link>
-			<Identifier>(0x3bcdecce, 0x2f4ac910)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x52e2d2a3, 0x4d9f5ea9)</BoxIdentifier>
-				<BoxOutputIndex>0</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x1a88b934, 0x580bfc30)</BoxIdentifier>
-				<BoxInputIndex>0</BoxInputIndex>
-			</Target>
-		</Link>
-		<Link>
 			<Identifier>(0x4dec0a97, 0x70c962ab)</Identifier>
 			<Source>
 				<BoxIdentifier>(0x558c587f, 0x223f3b66)</BoxIdentifier>
@@ -1460,17 +1332,6 @@
 			</Source>
 			<Target>
 				<BoxIdentifier>(0x1f046833, 0x21a8a876)</BoxIdentifier>
-				<BoxInputIndex>0</BoxInputIndex>
-			</Target>
-		</Link>
-		<Link>
-			<Identifier>(0x4fe0a074, 0x3d4b5f31)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x52a5790c, 0x13d24266)</BoxIdentifier>
-				<BoxOutputIndex>0</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x75beae35, 0x606e8c20)</BoxIdentifier>
 				<BoxInputIndex>0</BoxInputIndex>
 			</Target>
 		</Link>
@@ -1508,17 +1369,6 @@
 			</Target>
 		</Link>
 		<Link>
-			<Identifier>(0x640c71b7, 0x1e64acbd)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x1f046833, 0x21a8a876)</BoxIdentifier>
-				<BoxOutputIndex>1</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x4c1eab6f, 0x0e8c522c)</BoxIdentifier>
-				<BoxInputIndex>1</BoxInputIndex>
-			</Target>
-		</Link>
-		<Link>
 			<Identifier>(0x6610ecd1, 0x258f3dbd)</Identifier>
 			<Source>
 				<BoxIdentifier>(0x76b6b638, 0x0c6e446a)</BoxIdentifier>
@@ -1537,39 +1387,6 @@
 			</Source>
 			<Target>
 				<BoxIdentifier>(0x76b6b638, 0x0c6e446a)</BoxIdentifier>
-				<BoxInputIndex>0</BoxInputIndex>
-			</Target>
-		</Link>
-		<Link>
-			<Identifier>(0x71e176ce, 0x7030de6a)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x1074abc4, 0x70c7daba)</BoxIdentifier>
-				<BoxOutputIndex>0</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x4cd78e38, 0x35301f84)</BoxIdentifier>
-				<BoxInputIndex>0</BoxInputIndex>
-			</Target>
-		</Link>
-		<Link>
-			<Identifier>(0x78701b64, 0x712c2db1)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x09529b60, 0x70991eff)</BoxIdentifier>
-				<BoxOutputIndex>0</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x52e2d2a3, 0x4d9f5ea9)</BoxIdentifier>
-				<BoxInputIndex>0</BoxInputIndex>
-			</Target>
-		</Link>
-		<Link>
-			<Identifier>(0x791e2919, 0x0c35d8ac)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x71322e63, 0x41ba161a)</BoxIdentifier>
-				<BoxOutputIndex>0</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x09529b60, 0x70991eff)</BoxIdentifier>
 				<BoxInputIndex>0</BoxInputIndex>
 			</Target>
 		</Link>
@@ -1598,42 +1415,6 @@ to the one you recorded before!</Text>
 				<Attribute>
 					<Identifier>(0x7234b86b, 0x2b8651a5)</Identifier>
 					<Value>-144.000000</Value>
-				</Attribute>
-			</Attributes>
-		</Comment>
-		<Comment>
-			<Identifier>(0x054fe269, 0x76eae246)</Identifier>
-			<Text>Then comes the &lt;u&gt;feature extraction part&lt;/u&gt;.
-
-The signal is filtered in the alpha/beta [8 24] Hz range.
-
-Then the &lt;i&gt;&lt;b&gt;Stimulation Based Epoching&lt;/b&gt;&lt;/i&gt; box
-is used to select four seconds of signal half a second
-after the instruction was shown to the user
-(&lt;i&gt;OVTK_GDF_Left&lt;/i&gt; and &lt;i&gt;OVTK_GDF_Right&lt;/i&gt;).
- 
-The signal is then splitted in blocks of 1 second
-every 16th second and the logarithmic band power is
-computed thanks to the two &lt;i&gt;Simple DSP&lt;/i&gt; and
-the &lt;i&gt;Signal Average&lt;/i&gt; boxes.
-
-The matrices can then be converted in feature vectors.
-
-&lt;small&gt;&lt;i&gt;&lt;b&gt;note:&lt;/b&gt; depending on what frequency range
-reacts best for the subject, you may have to tune
-this part of the scenario&lt;/i&gt;&lt;/small&gt;
-
-&lt;small&gt;&lt;i&gt;&lt;b&gt;note:&lt;/b&gt; whatever change you do on this
-scenario, don't forget to do the same on the
-classifier trainer scenario&lt;/i&gt;&lt;/small&gt;</Text>
-			<Attributes>
-				<Attribute>
-					<Identifier>(0x473d9a43, 0x97fc0a97)</Identifier>
-					<Value>-144</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x7234b86b, 0x2b8651a5)</Identifier>
-					<Value>496</Value>
 				</Attribute>
 			</Attributes>
 		</Comment>
@@ -1703,27 +1484,6 @@ If this performance is lower than 65%, just run a new
 				<Attribute>
 					<Identifier>(0x7234b86b, 0x2b8651a5)</Identifier>
 					<Value>160</Value>
-				</Attribute>
-			</Attributes>
-		</Comment>
-		<Comment>
-			<Identifier>(0x7712b550, 0x7b357b74)</Identifier>
-			<Text>The &lt;i&gt;&lt;b&gt;Classifier Trainer&lt;/b&gt;&lt;/i&gt; box produces a
-configuration file at the end of the experiment
-which will be used during online sessions.
-
-The box raised the stimulation
-&lt;b&gt;OVTK_StimulationId_TrainCompleted&lt;/b&gt;
-at the end of the training process. This stimulation is
-used to stop the scenario with a &lt;i&gt;&lt;b&gt;Player Controller&lt;/b&gt;&lt;/i&gt;.</Text>
-			<Attributes>
-				<Attribute>
-					<Identifier>(0x473d9a43, 0x97fc0a97)</Identifier>
-					<Value>-144</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x7234b86b, 0x2b8651a5)</Identifier>
-					<Value>784</Value>
 				</Attribute>
 			</Attributes>
 		</Comment>
