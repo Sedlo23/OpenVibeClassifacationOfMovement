@@ -1,0 +1,72 @@
+Brain Vision Data Exchange Marker File, Version 1.0
+
+[Common Infos]
+Codepage=UTF-8
+DataFile=jllhce.eeg
+
+[Marker Infos]
+; Each entry: Mk<Marker number>=<Type>,<Description>,<Position in data points>,
+; <Size in data points>, <Channel number (0 = marker is related to all channels)>
+; Fields are delimited by commas, some fields might be omitted (empty).
+; Commas in type or description text are coded as "\1".
+Mk1=New Segment,,1,1,0,20181018130419273557
+Mk2=Stimulus,S  1,14486,1,0
+Mk3=Stimulus,S  1,24485,1,0
+Mk4=Stimulus,S  1,34484,1,0
+Mk5=Stimulus,S  1,44483,1,0
+Mk6=Stimulus,S  1,54483,1,0
+Mk7=Stimulus,S  8,64481,1,0
+Mk8=Stimulus,S  2,67757,1,0
+Mk9=Stimulus,S  2,73218,1,0
+Mk10=Stimulus,S  2,81337,1,0
+Mk11=Stimulus,S  2,90488,1,0
+Mk12=Stimulus,S  2,100127,1,0
+Mk13=Stimulus,S  2,109875,1,0
+Mk14=Stimulus,S  2,119706,1,0
+Mk15=Stimulus,S  2,127529,1,0
+Mk16=Stimulus,S  2,137179,1,0
+Mk17=Stimulus,S  2,146342,1,0
+Mk18=Stimulus,S  2,157340,1,0
+Mk19=Stimulus,S  2,169369,1,0
+Mk20=Stimulus,S  2,179903,1,0
+Mk21=Stimulus,S  4,184474,1,0
+Mk22=Stimulus,S  1,194473,1,0
+Mk23=Stimulus,S  1,204472,1,0
+Mk24=Stimulus,S  1,214471,1,0
+Mk25=Stimulus,S  1,224470,1,0
+Mk26=Stimulus,S  1,234469,1,0
+Mk27=Stimulus,S  8,244467,1,0
+Mk28=Stimulus,S  2,246435,1,0
+Mk29=Stimulus,S  2,254406,1,0
+Mk30=Stimulus,S  2,263151,1,0
+Mk31=Stimulus,S  2,274380,1,0
+Mk32=Stimulus,S  2,284683,1,0
+Mk33=Stimulus,S  2,294619,1,0
+Mk34=Stimulus,S  2,303617,1,0
+Mk35=Stimulus,S  2,314354,1,0
+Mk36=Stimulus,S  2,324758,1,0
+Mk37=Stimulus,S  2,335304,1,0
+Mk38=Stimulus,S  2,346727,1,0
+Mk39=Stimulus,S  2,358058,1,0
+Mk40=Stimulus,S  4,364460,1,0
+Mk41=Stimulus,S  1,374459,1,0
+Mk42=Stimulus,S  1,384458,1,0
+Mk43=Stimulus,S  1,394457,1,0
+Mk44=Stimulus,S  1,404457,1,0
+Mk45=Stimulus,S  1,414456,1,0
+Mk46=Stimulus,S  8,424453,1,0
+Mk47=Stimulus,S  2,425804,1,0
+Mk48=Stimulus,S  2,435744,1,0
+Mk49=Stimulus,S  2,446551,1,0
+Mk50=Stimulus,S  2,453968,1,0
+Mk51=Stimulus,S  2,460357,1,0
+Mk52=Stimulus,S  2,467712,1,0
+Mk53=Stimulus,S  2,476492,1,0
+Mk54=Stimulus,S  2,486400,1,0
+Mk55=Stimulus,S  2,495012,1,0
+Mk56=Stimulus,S  2,502058,1,0
+Mk57=Stimulus,S  2,512130,1,0
+Mk58=Stimulus,S  2,522019,1,0
+Mk59=Stimulus,S  2,533037,1,0
+Mk60=Stimulus,S  2,543539,1,0
+Mk61=Stimulus,S  4,544445,1,0
