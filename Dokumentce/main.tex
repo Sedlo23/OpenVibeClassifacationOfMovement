@@ -65,6 +65,10 @@ Scénář bude určený pro generování trénovací množiny dat.
 Bude filtrovat vstupní kanály a zuží je pouze na čtyři - \textbf{C3, C4, P3, P4}. Tyto kanály obsahují veškeré informace o pohybu horních končetin.
 
 Vstup pro tento scénář budou \textit{.ov} soubory a výstupem bude jeden prvek trénovací množiny \textit{.cfg}.
+\subsection{Algoritmy a přesnost}
+implementovány jsou tři algoritmy LDA, SVM a perceptron, liší se svojí přesností i délkou trvání učení. Po každém učení se provádí cross-validační testy, počet těchto testů může být nastaven, pokud 
+přesnost testů výjde méně než 65 procent tak je další měření extrémně nepřesné (chyba se kumuluje) až do stavu nepoužitelného měření. Doporučujeme při špatných výsledcích v trénování a následné cross-validaci bylo trénování opaková s upravenými hodnotami pro trénovací algoritmus (liší se pro všechny tři), pokud by se zdálo toto řešení jako slepá ulička tedy nevedlo by zdánlivě k žádnému vylepšení výsledků mělo by následovat úprava dat respektivě upravit delay box (přesnější informace uvedeny ve scénáři). Poslední možná doporučené úprava je nastavení signálů pro učení (někdy se může stát že signály jsou jinak pojmenovány). Nedopuručené úpravy jsou změna DSP boxů (jiný vzorec), změna časování (vetšinou delší čas) či úprava rozložení a propojení boxů, tyto úpravy jsou nedoporučené, protože jejich aplikace může vést od nefuknčosti některých částí úlohy až po poškození dat (při testech se několikrát nenávratně poškodili některé .xml soubory)   . 
+
 %
 \section{Testování klasifikace}
 Scénář bude určený pro klasifikaci scénáře na základě trénovací množiny.
@@ -133,7 +137,6 @@ Po otevření scénářů je potřeba nahrát data, se kterými budeme pracovat.
 
 \subsection{trainer.xml}
 Scénář určený pro trénování. V pluginu \textit{Generic stream reader} nastavíme vstupní soubor \textit{.ov} formátu obdobně jako jsme nastavovali vstupní soubor v \textbf{convert.xml}, který chceme natrénovat.
-
 V pluginu \textit{Classifier trainer} a jeho textovém poli \textit{Filename to save configuration to} nastavíme příslušný soubor a cestu, kam trénovací soubor uložit v \textit{.cfg} formátu (obrázek \ref{fig:trainer}).
 
   \begin{figure}[!ht]
@@ -164,4 +167,3 @@ Nyní můžeme tento scénář spustit a zobrazí se nám výsledky klasifikace 
 \chapter{Závěr}
 Ačkoli nám uzavření fakulty znemožnilo realizovat původní zadání s využitím online měřených dat, byli jsme nuceni požádat zadavatele o přizpůsobení původního zadání těmto změnám. Nakonec se nám podařilo zrealizovat scénáře pro klasifikaci potenciálů horních končetin z již existujicích offline dat.
 \end{document}
-
